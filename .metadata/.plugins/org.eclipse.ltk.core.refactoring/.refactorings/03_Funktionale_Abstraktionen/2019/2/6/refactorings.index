@@ -1,0 +1,11 @@
+1549664136681	Copy compilation units
+1549664152097	Copy compilation unit
+1549701233128	Rename local variable 'ss_SpielerIndex'
+1549717363996	Rename local variable 'w_spielerListe'
+1549718663140	Rename local variable 'i_spieleri'
+1549722435714	Rename local variable 'Spieler_pos'
+1549723687131	Rename local variable 'Spieler_pos'
+1549742258928	Rename field 'akt_spielerListe'
+1549742419282	Rename field 'z_runde'
+1549742807031	Rename method 'SpielerListe_erzeugen'
+1549788142278	Rename field 'w_spielerVerwalter'

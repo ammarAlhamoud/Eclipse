@@ -1,0 +1,11 @@
+package übungen;
+
+
+public class BinaerSucheTest {
+
+	public static void main(String[] args) {
+		int gesucht;
+		BufferedReader eingabe = new BufferedReader(new InputStreamReader(System.in));
+	}
+
+}

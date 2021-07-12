@@ -1,0 +1,126 @@
+package dlg_begruessung_persoenlich_V3;
+import java.io.*;
+import java.util.Calendar;
+public class Dlg_Begruessung_persoenlich_V3
+  {
+	public static void main(String[] args) 
+	{
+	String name;
+	int 	z_anrede;
+	int		akt_Monat,
+			akt_Tag,
+			quotient,
+			rest,
+			z_maxAnredeEingabe = 8;	  
+	String    gebdatum, anrede;
+	final long  dialogende,
+				dialogdauer;
+	long akt_zeitpkt;
+	
+
+	short	z_Versuch_anredeEingabe = 1;
+	int c_Monat,
+		c_Tag,
+		c_Jahr;
+	boolean prüf_Datum = true,
+			geb_Tag_prüf;
+	
+	
+	/* personaldaten erfassen   */
+	dialogende = System.currentTimeMillis()+120000;
+	System.out.println("Bitte Name eingeben");
+	name=  ConsolReader.readString();
+	akt_zeitpkt =System.currentTimeMillis();
+	// Anrede Dialog steuern
+	if(dialogende < akt_zeitpkt)
+		{System.out.println("Weiter Eingabe ist nicht möglich");	
+		}
+	else
+		{System.out.println("Arede (0 = Herr,1 = Frau, 2 = Dr , 3 = Durchlaucht)" );
+		z_anrede = ConsolReader.readInt();
+		akt_zeitpkt =System.currentTimeMillis();
+		while ( (z_anrede < 0 || z_anrede > 3) & z_Versuch_anredeEingabe < z_maxAnredeEingabe & dialogende > akt_zeitpkt) 
+			{System.out.println("unzulässige Anrede! nochmal!" );
+			z_anrede = ConsolReader.readInt();
+			z_Versuch_anredeEingabe +=1;
+			akt_zeitpkt =System.currentTimeMillis();
+			} 
+		
+		
+		//Geburtsdatum Dialog steuern
+		if (z_Versuch_anredeEingabe >=8)
+			{System.out.println("Sie Haben die maxsimale Versuchgrenze erreicht!");
+			}
+		else
+			{do 
+				{System.out.println("Geburstdatum");
+				System.out.println("Datum nicht plausible! Nochmal!");
+				gebdatum = ConsolReader.readString();		
+				c_Monat = ((gebdatum.charAt(3)-'0')*10)+(gebdatum.charAt(4)-'0');
+				c_Tag = ((gebdatum.charAt(0)-'0')*10)+(gebdatum.charAt(1)-'0');
+				c_Jahr = ((gebdatum.charAt(6)-'0')*1000)+((gebdatum.charAt(7)-'0')*100)+((gebdatum.charAt(8)-'0')*10)+(gebdatum.charAt(9)-'0');
+				if ((1 > c_Monat || c_Monat > 12) || (1 > c_Tag || c_Tag > 31))
+					{prüf_Datum = false;
+					}
+				else
+					{if (c_Tag < 29 )
+						{}
+					else
+						{if (c_Monat == 2)
+							{quotient = (int) (c_Jahr/4);
+							rest = c_Jahr % 4;
+							if(rest > 0)
+								{if(c_Tag == 29 )
+									{}
+								else
+									{prüf_Datum = false;	
+									}	
+							}
+							else
+								{prüf_Datum = false;			
+								}
+						}
+						else
+							{if((c_Monat % 2 == 0 & c_Monat <= 7) || (c_Monat % 2 != 0 & c_Monat > 7))
+								{if (c_Tag <= 30 )
+									{}
+								else
+									{prüf_Datum = false;	
+									}
+								}
+							}	
+							}						
+					}
+				akt_zeitpkt = System.currentTimeMillis();
+				}
+			while (prüf_Datum == false & dialogende > akt_zeitpkt);
+			if (dialogende < akt_zeitpkt)
+				{System.out.println("Weiter Eingabe ist nicht möglich");		
+				}
+			else
+			{akt_Monat= Calendar.getInstance().get(Calendar.MONTH)+1;
+			akt_Tag=Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
+			geb_Tag_prüf = c_Tag==akt_Tag && c_Monat==akt_Monat;	
+			/*Erweiterung des Grüßens*/
+			switch (z_anrede)
+				{case 0:anrede = "Herr";
+				break;
+				case 1:anrede = "Frau";
+				break;
+				case 2:anrede = "Dr";
+				break;
+				case 3:anrede = "Durchlaucht";
+				break;
+				default:anrede = "";
+				break;
+				}//end switch
+			/* personal Begreussung  */
+			System.out.println("Guten Tag "+anrede + " " + name);	
+			if(geb_Tag_prüf)
+				{System.out.println("Sie haben heute Ihren Geburtstag");	
+				}
+			}		
+		}
+		}
+	}//end main
+}

@@ -1,0 +1,11 @@
+package k_3_4_Ratespiel;
+
+/**
+ * @author Bernd
+ * @created 27.01.2006
+ */
+public interface Trainer 
+  {public String get_Name();
+   public String get_Frage(int ss_fragenr);
+   public boolean is_richtige_Antwort_auf_Frage(int ss_fragenr, String ss_antwort);
+  }

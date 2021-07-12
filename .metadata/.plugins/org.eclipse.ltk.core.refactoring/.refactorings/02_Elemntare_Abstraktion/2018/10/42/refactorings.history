@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;dlg_Mathe_Apps.DlgTeiler&apos; to &apos;Dlg_TeilerBestimmung&apos;&#x0D;&#x0A;- Original project: &apos;02_Elemntare_Abstraktion&apos;&#x0D;&#x0A;- Original element: &apos;dlg_Mathe_Apps.DlgTeiler&apos;&#x0D;&#x0A;- Renamed element: &apos;dlg_Mathe_Apps.Dlg_TeilerBestimmung&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DlgTeiler&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;dlg_Mathe_Apps{DlgTeiler.java[DlgTeiler" matchStrategy="1" name="Dlg_TeilerBestimmung" qualified="false" references="true" similarDeclarations="false" stamp="1539606090386" textual="false" version="1.0"/>
+</session>

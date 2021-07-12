@@ -1,0 +1,6 @@
+testling_mitTestfaellen.App_BankautomatPreChecker_V3
+--- *************** Test Case 1  ************
+---  Bitte KontoNr eingeben! (Kontonr besteht aus 6 Ziffern):
+123455
+---   Bitte Passwort eingeben:
+142536

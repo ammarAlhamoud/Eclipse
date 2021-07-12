@@ -1,0 +1,35 @@
+package dlgBankschalter;
+
+import app_BankautomatPreChecker_V4.ConsolReader;
+
+public class DlgBankschalter {
+private char c_weiter_Beratung , c_gewuenschterTilgungsplaner,
+			c_gewuenschteBerechnung=' ' ;
+private double darlehen , leihdauer , nominalzins, berechneterWert;
+private int z_abgelaufenenJahre = 0;
+private Tilgungsplaner gewuenschterTilgungsplaner = null;
+	public static void main(String[] args) 
+		{
+			
+		}//end main
+	private void Berechnung_steuern()
+		{do
+			{System.out.println("Wollen Sie	 die Summe der Zinsen wissen?		 	 (0)");
+			System.out.println("			 die Summe des Mittelabfluss wissen? 	 (1)");
+			System.out.println("			 fällige Zinsen im Jahe X wissen? 		 (2)");	
+			System.out.println("			 fällige Tilgung im Jahe X wissen? 	 	 (3)");
+			System.out.println("			 fällige Mittelabfluss im Jahe X wissen? (4)");
+			System.out.println("Sonst											 	 (e)");
+			c_gewuenschteBerechnung = ConsolReader.readChar();
+			if (c_gewuenschteBerechnung >= 2 && c_gewuenschteBerechnung <= 4)
+				{System.out.println("Das wievilte Jahr möchten Sie betrachten? (lfdNr eingeben!)");
+				z_abgelaufenenJahre = ConsolReader.readInt();
+				} //end if
+			switch (c_gewuenschteBerechnung)
+				{case '0' : System.out.println(gewuenschterTilgungspalner.get); 
+				}
+			}
+		while (c_gewuenschteBerechnung != 'e')	;
+		}
+
+}

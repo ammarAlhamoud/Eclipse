@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ConsolReader.java&apos; to &apos;GUI/src/k_5_2_Schiffe_abstrakt&apos;&#x0D;&#x0A;- Original project: &apos;Array&apos;&#x0D;&#x0A;- Destination element: &apos;GUI/src/k_5_2_Schiffe_abstrakt&apos;&#x0D;&#x0A;- Original element: &apos;dlg_MemorySpiel_V1.ConsolReader.java&apos;" description="Copy compilation unit" destination="=GUI/src&lt;k_5_2_Schiffe_abstrakt" element1="/src&lt;dlg_MemorySpiel_V1{ConsolReader.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1562318567347" units="1" version="1.0"/>
+</session>

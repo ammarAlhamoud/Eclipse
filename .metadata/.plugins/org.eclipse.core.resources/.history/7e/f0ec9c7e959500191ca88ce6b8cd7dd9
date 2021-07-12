@@ -1,0 +1,10 @@
+package übungen;
+
+public class LineareSucheTest {
+
+	public static void main(String[] args) {
+		LineareSuche L = new LineareSuche(12);
+		int ges = 
+	}
+
+}

@@ -1,0 +1,40 @@
+package App_BankautomatPreChecker_V3;
+
+public class App_BankautomatPreChecker_V3 {
+	public static void main(String[] args)
+	{
+		String kontonr;
+		String passwort;
+		boolean isPrüfZiffer = true;
+		int prüfZiffer;
+		int z_Quersumme;
+		final long  endezeitpkt;
+					
+		boolean		isZeit = true;
+
+		/* personal Daten erfassen */
+		endezeitpkt = System.currentTimeMillis() + 30000;		
+			/* Passwort prüfen und neu eingeben falls es falsch ist */
+			do
+				{System.out.println("Bitte Passwort eingeben");		
+				passwort = ConsolReader.readString();	
+				System.out.println(passwort.length()); 
+				} while (passwort.length() < 6 && endezeitpkt < System.currentTimeMillis() );
+			System.out.println("Bitte Konto Nummer  eingeben! (6 stellig) ");
+			/* Konto Nummer prüfen und neu eingeben falls es falsch ist */
+			do
+				{kontonr = ConsolReader.readString();	
+				prüfZiffer = kontonr.charAt(5)-'0';
+				z_Quersumme = (kontonr.charAt(0)-'0')+(kontonr.charAt(1)-'0')+(kontonr.charAt(2)-'0')+(kontonr.charAt(3)-'0')+(kontonr.charAt(4)-'0');	
+				isPrüfZiffer = (z_Quersumme % 10) == prüfZiffer;
+				if (!isPrüfZiffer)
+					{System.out.println("Konto Nummer ist falsch! Bitte nochmal versuchen");
+					}
+				}while (!isPrüfZiffer && endezeitpkt < System.currentTimeMillis());					
+			System.out.println("....................................");
+			System.out.println("Anmeldung erfolgreich, Danke!");		
+		
+		System.out.println("Es tut uns Leid, kein Zeit mehr für neue Versuch");
+		
+	}//end main
+}

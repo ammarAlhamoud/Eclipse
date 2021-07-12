@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ConsolReader.java&apos; to &apos;meine eigene Übüngen/src/dlgTätigkeiten&apos;&#x0D;&#x0A;- Original project: &apos;03_Funktionale_Abstraktionen&apos;&#x0D;&#x0A;- Destination element: &apos;meine eigene Übüngen/src/dlgTätigkeiten&apos;&#x0D;&#x0A;- Original element: &apos;app_BankautomatPreChecker_V4.ConsolReader.java&apos;" description="Copy compilation unit" destination="=meine eigene Übüngen/src&lt;dlgTätigkeiten" element1="/src&lt;app_BankautomatPreChecker_V4{ConsolReader.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1549123171394" units="1" version="1.0"/>
+</session>

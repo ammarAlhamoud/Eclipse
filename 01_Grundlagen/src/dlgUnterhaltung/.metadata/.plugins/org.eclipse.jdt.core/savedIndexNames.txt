@@ -1,0 +1,1 @@
+INDEX VERSION 1.130+T:\I11\Gemeinsam\PR\01_Grundlagen\dlgUnterhaltung\.metadata\.plugins\org.eclipse.jdt.core

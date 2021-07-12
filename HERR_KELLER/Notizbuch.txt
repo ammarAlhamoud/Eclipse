@@ -1,0 +1,5 @@
+4
+0	09-05-2016eine<u>Funktion</u>ist eine <u>Methode</u>
+1	10-05-2016t:10Vorratsprüfung Keller <u>Chianti</u> 
+2	10-05-2016t:25Einkaufen<u>Chianti</u>
+3	

@@ -1,0 +1,18 @@
+package dlgModerator;
+
+public class Regie 
+	{public static Trainer getTrainer()
+			{Trainer ss_bereitgestellterTrainer;
+			if ((int)(Math.random()*10)%2 == 0)
+				{ss_bereitgestellterTrainer = new MatheTrainer();
+				}
+			else
+				{ss_bereitgestellterTrainer = new GeoTrainer();			
+				}
+			return ss_bereitgestellterTrainer ;
+			}
+	
+	
+	
+	
+	}

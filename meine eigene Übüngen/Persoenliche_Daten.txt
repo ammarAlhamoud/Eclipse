@@ -1,0 +1,20 @@
+Name: Ammar
+Alter: 32
+Note: 3.0
+Geschlecht: m
+
+Name: Ahmad
+Alter: 20
+Note: 6.0
+Geschlecht: m
+
+Name: Salwa
+Alter: 26
+Note: 2.0
+Geschlecht: f
+
+Name: Kariem
+Alter: 10
+Note: 2.3
+Geschlecht: M
+

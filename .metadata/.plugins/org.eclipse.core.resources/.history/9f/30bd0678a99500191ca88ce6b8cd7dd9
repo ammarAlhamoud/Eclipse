@@ -1,0 +1,14 @@
+package übungen;
+
+public class BubblesortTest {
+
+	public static void main(String[] args) {
+		Bubblesort	B = new Bubblesort(12);
+		System.out.println("Unsortierte Folge:");
+		B.ausgeben();
+		B.sortiere();
+		System.out.println("Mit Bubblesort sortierte Folge:");
+		B.ausgeben();
+	}
+
+}

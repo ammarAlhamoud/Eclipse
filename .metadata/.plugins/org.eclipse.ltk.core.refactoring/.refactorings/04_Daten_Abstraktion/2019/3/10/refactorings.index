@@ -1,0 +1,4 @@
+1551944926266	Rename field 'is_schiffsteil_mehrmals_getroffen'
+1552035744889	Copy compilation unit
+1552036039686	Encapsulate field 'text'
+1552045239593	Rename method 'get_notiz'

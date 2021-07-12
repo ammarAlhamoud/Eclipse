@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;02_Elementare_Abstraktionen/src/dlg_begruessung_persoenlich_V3&apos;&#x0D;&#x0A;- Original project: &apos;02_Elementare_Abstraktionen&apos;&#x0D;&#x0A;- Destination element: &apos;02_Elementare_Abstraktionen/src/dlg_begruessung_persoenlich_V3&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Dlg_begruessung_persoenlich_V1.Dlg_Begruessung_persoenlich_V1.java&#x0D;&#x0A;     Dlg_begruessung_persoenlich_V1.ConsolReader.java" description="Copy compilation units" destination="/src&lt;dlg_begruessung_persoenlich_V3" element1="/src&lt;Dlg_begruessung_persoenlich_V1{Dlg_Begruessung_persoenlich_V1.java" element2="/src&lt;Dlg_begruessung_persoenlich_V1{ConsolReader.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1543682639079" units="2" version="1.0"/>
+</session>

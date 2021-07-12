@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ConsolReader.java&apos; to &apos;meine eigene Übüngen/src/operationswerk_test_selber&apos;&#x0D;&#x0A;- Original project: &apos;meine eigene Übüngen&apos;&#x0D;&#x0A;- Destination element: &apos;meine eigene Übüngen/src/operationswerk_test_selber&apos;&#x0D;&#x0A;- Original element: &apos;dlgModerator_Übung.ConsolReader.java&apos;" description="Copy compilation unit" destination="/src&lt;operationswerk_test_selber" element1="/src&lt;dlgModerator_Übung{ConsolReader.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1551184584907" units="1" version="1.0"/>
+</session>

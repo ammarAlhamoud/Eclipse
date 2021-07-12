@@ -1,0 +1,39 @@
+package App_BankautomatPreChecker_V3;
+
+public class App_BankautomatPreChecker_V3 {
+	public static void main(String[] args)
+	{
+		String kontonr;
+		String passwort;
+		int länge_Passwort;
+		boolean isPrüfZiffer;
+		int prüfZiffer;
+		int z_Quersumme;
+		final long  endezeitpkt;
+					
+		boolean		isZeit = true;
+
+		/* personal Daten erfassen */
+		System.out.println("Bitte KontoNr eingeben! (Kontonr besteht aus 6 Ziffern)");
+		kontonr = ConsolReader.readString();
+		System.out.println("Bitte Passwort eingeben");
+		passwort = ConsolReader.readString();
+		endezeitpkt = System.currentTimeMillis() + 30000;
+		
+		/* Passwort und Kontonummer prüfen*/
+		länge_Passwort = passwort.length();
+		prüfZiffer = kontonr.charAt(5)-'0';
+		z_Quersumme = (kontonr.charAt(0)-'0')+(kontonr.charAt(1)-'0')+(kontonr.charAt(2)-'0')+(kontonr.charAt(3)-'0')+(kontonr.charAt(4)-'0');	
+		isPrüfZiffer = (z_Quersumme % 10) == prüfZiffer;
+		if (länge_Passwort < 6 && isZeit)
+			{System.out.println("Bitte Passwort nochmals eingeben ! ");
+			passwort = ConsolReader.readString();
+			if(endezeitpkt < System.currentTimeMillis())
+				{isZeit = false;
+				}
+			}				
+		/* Prüfergebnis anzeigen*/
+		System.out.println("....................................");
+		System.out.println("KontoNr ist :" + isPrüfZiffer);		
+	}//end main
+}
